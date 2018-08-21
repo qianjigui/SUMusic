@@ -127,7 +127,7 @@
 }
 
 - (void)remoteControlReceivedWithEvent:(UIEvent *)event {
-    
+    NSLog(@"Get Remote Control Event:%@, %lld", event, event.subtype);
     switch (event.subtype)
     {
         case UIEventSubtypeRemoteControlPlay:
